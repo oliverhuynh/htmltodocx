@@ -12,7 +12,7 @@ class HTMLTODOCX {
     }
     require_once __DIR__ . '/simplehtmldom/simple_html_dom.php';
     require_once __DIR__ . '/htmltodocx_converter/h2d_htmlconverter.php';
-    require_once __DIR__ . '/documentation/support_functions.php';
+    require_once __DIR__ . '/documentation/support_functions.inc';
     \PhpOffice\PhpWord\Autoloader::register();
   }
 
