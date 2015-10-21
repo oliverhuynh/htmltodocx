@@ -16,7 +16,7 @@ class HTMLTODOCX {
     \PhpOffice\PhpWord\Autoloader::register();
   }
 
-  function prepare($html, $section = null, $phpword_object = null, $style_sheet = array()) {
+  function prepare($html, &$section = null, &$phpword_object = null, $style_sheet = array()) {
     $phpword_object = new \PhpOffice\PhpWord\PhpWord();
     $section = $phpword_object->addSection();
 
